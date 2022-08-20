@@ -14,7 +14,7 @@ export class AppController {
       transport: Transport.RMQ,
       options: {
         urls: [
-          'amqp://user:9Z2p4x7aIlpa@3.84.61.97:5672/smart-ranking'
+          process.env.AMQP_URL
         ],
         queue: 'admin-backend'
       }
